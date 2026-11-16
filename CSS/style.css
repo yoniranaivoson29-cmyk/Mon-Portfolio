@@ -93,4 +93,50 @@ h1{
     li {
         margin-bottom: 8px;
     }
+#haut{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#theme{
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgb(0, 0, 69);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sombre{
+    background-color: #222;
+    color: white;
+}
+
+.sombre .contenu{
+    background-color: #333;
+}
+
+.sombre .cases{
+    background-color: #444;
+    color: white;
+}
+
+.sombre .sous{
+    background-color: #555;
+}
+
+.sombre h1,
+.sombre h2,
+.sombre h3{
+    color: orange;
 }
