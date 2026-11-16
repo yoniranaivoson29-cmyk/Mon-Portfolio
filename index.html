@@ -6,6 +6,7 @@
         <title>Mon portofolio</title>
         <link rel="stylesheet" href="CSS/style.css">
     </head>
+
     <body>
         <div class="contenu">
         <h1>RANAIVOSON Jean Heritiana Yoni</h1>
@@ -128,6 +129,57 @@
     © 2026 - Yoni Ranaivoson. Tous droits reserves.
 </footer>
 </div>
+<div class="cases">
+    <h2>Heure actuelle</h2>
+    <p id="heure"></p>
+</div>
 
+<button id="haut">⬆ Haut</button>
+
+<button id="theme">🌙 Mode sombre</button>
+        <script>
+
+
+
+function afficherHeure()
+{
+    let maintenant = new Date();
+
+    document.getElementById("heure").innerHTML =
+    maintenant.toLocaleString();
+}
+
+setInterval(afficherHeure, 1000);
+
+afficherHeure();
+
+
+
+document.getElementById("haut")
+.addEventListener("click", function()
+{
+    window.scrollTo(
+    {
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+
+document.getElementById("theme")
+.addEventListener("click", function()
+{
+    document.body.classList.toggle("sombre");
+});
+
+
+
+window.onload = function()
+{
+    alert("Bienvenue sur le portfolio de Yoni Ranaivoson !");
+};
+
+</script>
 </body>
 </html>
